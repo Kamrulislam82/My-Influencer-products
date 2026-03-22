@@ -19,32 +19,30 @@
     <header>
         <!-- nav bar -->
         <section class="md:container mx-auto">
-            <div class="navbar bg-slate-200 shadow-sm mt-5 mb-5">
+            <div class="navbar bg-slate-200 mt-5 mb-5">
                 <div class="navbar-start flex-1">
-                    <div class="dropdown ">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <div class="dropdown">
+                    <div  class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
                     </div>
-                    <ul
-                        tabindex="-1"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                    <ul tabindex="-1" class="menu menu-sm dropdown-content bg-base-100 text-black font-bold rounded-box z-1 mt-3 w-52 p-2 shadow">
                         <li><a>Home</a></li>
                         <li><a>Products</a></li>
                         <li><a>Sign up</a></li>
                         <li><a>Log In</a></li>
                     </ul>
                     </div>
-                    <a class="btn btn-ghost text-xl">Influencer products</a>
+                    <a class="btn btn-ghost font-bold text-2xl">Influencer products</a>
                 </div>
             <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
+                    <ul class="menu menu-horizontal font-bold text-black px-1">
                         <li><a>Home</a></li>
                         <li><a>Products</a></li>
                         <li><a>Sign up</a></li>
                         <li><a>Log In</a></li>
                     </ul>
                         <div class="p-2">
-                            <a class="btn btn-ghost btn-circle gap-3">
+                            <a class="btn btn-ghost btn-circle gap-5 p-5">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                                 <i class="fa-solid fa-cart-shopping"></i>
                             </a>
@@ -53,7 +51,7 @@
             </div>
         </section>
         <!-- banner -->
-         <section class="md:container mx-auto">
+         <section class="md:container lg:container-fluid mx-auto">
             <div class="hero bg-base-100 h-140">
                 <div class="hero-content flex-col lg:flex-row-reverse gap-20">
                     <div class="max-w-sm rounded-lg w-full">
@@ -70,16 +68,24 @@
     </header>
     <main>
         <!-- brand -->
-         <section class="md:container mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-12">
-              
+         <section class="md:container mx-auto mb-20">
+            <div class="grid grid-flow-col md:grid-cols-3 lg:grid-cols-5 gap-30">
+                <img src="../logos/Alibaba.svg" alt="">
+                <img src="../logos/Amazon.svg" alt="">
+                <img src="../logos/Daraz-Logo.svg" alt="">
+                <img src="../logos/Ebay.svg" alt="">
+                <img src="../logos/Rakuten.svg" alt="">
+                <img src="../logos/Walmart.svg" alt="">
+                <img src="../logos/Target.svg" alt="">
+
             </div>
          </section>
 
          <!-- Popular Collection -->
           <section class="md:container mx-auto">
-                <h1 class="text-4xl text-center mt-5 mb-5">Popular Collection</h1>
+                <h1 class="text-4xl text-center font-bold mb-5">Popular Collection</h1>
                 <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+
                     <div class="card bg-base-300 w-96 mt-3 mb-3 shadow-sm">
                         <figure>
                             <img class="w-150 shadow-2xl p-3" src="../images/tripod.png" alt="" />
@@ -98,12 +104,30 @@
                             <p class="font-bold">Wordwide shifting <br>available <br>Buyers protection possible!</p>
                         </div>
                     </div>
-                    <div class="card bg-base-300 w-96 mt-3 mb-3 shadow-sm">
+                     <div class="card bg-base-300 w-96 mt-3 mb-3 shadow-sm">
                         <figure>
-                            <img class="w-150 shadow-2xl p-3" src="../images/tripod.png" alt="" />
+                            <img class="w-150 shadow-2xl p-3" src="../images/mic.png" alt="" />
                         </figure>
                         <div class="card-body">
-                            <h2 class="card-title text-2xl font-bold">Flex Tripod</h2>
+                            <h2 class="card-title text-2xl font-bold">microphone</h2>
+                            <h2 class="text-1.8xl font-bold">$120.25</h2>
+                            <div class="flex items-center">
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                            <p class="text-xl">4.99</p>
+                            </div>
+                            <p class="font-bold">Wordwide shifting <br>available <br>Buyers protection possible!</p>
+                        </div>
+                    </div>
+                    <div class="card bg-base-300 w-96 mt-3 mb-3 shadow-sm">
+                        <figure>
+                            <img class="w-150 shadow-2xl p-3" src="../images/airpod.png" alt="" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title text-2xl font-bold">Airbuds</h2>
                             <h2 class="text-1.8xl font-bold">$50.48</h2>
                             <div class="flex items-center">
                             <i class="fa-solid fa-star text-amber-500"></i>
@@ -118,10 +142,10 @@
                     </div>
                     <div class="card bg-base-300 w-96 mt-3 mb-3 shadow-sm">
                         <figure>
-                            <img class="w-150 shadow-2xl p-3" src="../images/tripod.png" alt="" />
+                            <img class="w-150 shadow-2xl p-3" src="../images/camera.png" alt="" />
                         </figure>
                         <div class="card-body">
-                            <h2 class="card-title text-2xl font-bold">Flex Tripod</h2>
+                            <h2 class="card-title text-2xl font-bold">Vlogging Camera</h2>
                             <h2 class="text-1.8xl font-bold">$50.48</h2>
                             <div class="flex items-center">
                             <i class="fa-solid fa-star text-amber-500"></i>
@@ -136,10 +160,10 @@
                     </div>
                     <div class="card bg-base-300 w-96 mt-3 mb-3 shadow-sm">
                         <figure>
-                            <img class="w-150 shadow-2xl p-3" src="../images/tripod.png" alt="" />
+                            <img class="w-150 shadow-2xl p-3" src="../images/drone.png" alt="" />
                         </figure>
                         <div class="card-body">
-                            <h2 class="card-title text-2xl font-bold">Flex Tripod</h2>
+                            <h2 class="card-title text-2xl font-bold">Drone</h2>
                             <h2 class="text-1.8xl font-bold">$50.48</h2>
                             <div class="flex items-center">
                             <i class="fa-solid fa-star text-amber-500"></i>
@@ -154,10 +178,10 @@
                     </div>
                     <div class="card bg-base-300 w-96 mt-3 mb-3 shadow-sm">
                         <figure>
-                            <img class="w-150 shadow-2xl p-3" src="../images/tripod.png" alt="" />
+                            <img class="w-150 shadow-2xl p-3" src="../images/lights.png" alt="" />
                         </figure>
                         <div class="card-body">
-                            <h2 class="card-title text-2xl font-bold">Flex Tripod</h2>
+                            <h2 class="card-title text-2xl font-bold">Light Setup</h2>
                             <h2 class="text-1.8xl font-bold">$50.48</h2>
                             <div class="flex items-center">
                             <i class="fa-solid fa-star text-amber-500"></i>
@@ -172,10 +196,10 @@
                     </div>
                     <div class="card bg-base-300 w-96 mt-3 mb-3 shadow-sm">
                         <figure>
-                            <img class="w-150 shadow-2xl p-3" src="../images/tripod.png" alt="" />
+                            <img class="w-150 shadow-2xl p-3" src="../images/setup.png" alt="" />
                         </figure>
                         <div class="card-body">
-                            <h2 class="card-title text-2xl font-bold">Flex Tripod</h2>
+                            <h2 class="card-title text-2xl font-bold">Photoshoot set</h2>
                             <h2 class="text-1.8xl font-bold">$50.48</h2>
                             <div class="flex items-center">
                             <i class="fa-solid fa-star text-amber-500"></i>
@@ -190,10 +214,10 @@
                     </div>
                     <div class="card bg-base-300 w-96 mt-3 mb-3 shadow-sm">
                         <figure>
-                            <img class="w-150 shadow-2xl p-3" src="../images/tripod.png" alt="" />
+                            <img class="w-150 shadow-2xl p-3" src="../images/single-light.png" alt="" />
                         </figure>
                         <div class="card-body">
-                            <h2 class="card-title text-2xl font-bold">Flex Tripod</h2>
+                            <h2 class="card-title text-2xl font-bold">Green Screen</h2>
                             <h2 class="text-1.8xl font-bold">$50.48</h2>
                             <div class="flex items-center">
                             <i class="fa-solid fa-star text-amber-500"></i>
@@ -208,10 +232,10 @@
                     </div>
                     <div class="card bg-base-300 w-96 mt-3 mb-3 shadow-sm">
                         <figure>
-                            <img class="w-150 shadow-2xl p-3" src="../images/tripod.png" alt="" />
+                            <img class="w-150 shadow-2xl p-3" src="../images/action.png" alt="" />
                         </figure>
                         <div class="card-body">
-                            <h2 class="card-title text-2xl font-bold">Flex Tripod</h2>
+                            <h2 class="card-title text-2xl font-bold">Action Camera</h2>
                             <h2 class="text-1.8xl font-bold">$50.48</h2>
                             <div class="flex items-center">
                             <i class="fa-solid fa-star text-amber-500"></i>
@@ -224,28 +248,45 @@
                             <p class="font-bold">Wordwide shifting <br>available <br>Buyers protection possible!</p>
                         </div>
                     </div>
-                    <div class="card bg-base-300 w-96 mt-3 mb-3 shadow-sm">
-                        <figure>
-                            <img class="w-150 shadow-2xl p-3" src="../images/tripod.png" alt="" />
-                        </figure>
-                        <div class="card-body">
-                            <h2 class="card-title text-2xl font-bold">Flex Tripod</h2>
-                            <h2 class="text-1.8xl font-bold">$50.48</h2>
-                            <div class="flex items-center">
-                            <i class="fa-solid fa-star text-amber-500"></i>
-                            <i class="fa-solid fa-star text-amber-500"></i>
-                            <i class="fa-solid fa-star text-amber-500"></i>
-                            <i class="fa-solid fa-star text-amber-500"></i>
-                            <i class="fa-solid fa-star text-amber-500"></i>
-                            <p class="text-xl">4.99</p>
-                            </div>
-                            <p class="font-bold">Wordwide shifting <br>available <br>Buyers protection possible!</p>
-                        </div>
-                    </div>
-               </div>
-                    <a class="text-red-500 font-bold text-2xl">See More<i class="fa-solid fa-arrow-right"></i></a>
+               </div>  
           </section>
+          <div class="text-end mx-28">
+            <a class="text-red-500 font-bold text-2xl">See More<i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <section class="md:container mx-auto">
+            <div class=" bg-base-100 ">
+                <div class="hero-content flex-col md:flex-row-1 lg:flex-row-reverse h-80 gap-20">
+                    <div class="w-3/6">
+                        <h1 class="text-5xl font-bold">Featured products at one place</h1>
+                        <p class="py-6">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        <button class="btn bg-red-500 text-white">Join Now <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                    <div class="max-w-sm rounded-lg w-full">
+                        <img alt="" src="../images/gear.png" >
+                    </div>
+                </div>
+            </div>
+         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <!-- Footer section -->
+        <div class="footer footer-horizontal footer-center bg-black text-primary-content p-10">
+            <aside>
+                <h1 class="text-xl">Influencer products</h1>
+                <p>Copyright © 2020  influencer products</p>
+                <p>All rights reserved</p>
+            </aside>
+            <nav>
+                <div class="grid grid-flow-col gap-4">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>
+            </nav>
+        </div>
+    </footer>
 </body>
 </html>
